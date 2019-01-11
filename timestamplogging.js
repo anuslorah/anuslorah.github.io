@@ -1,1 +1,14 @@
-alert("Moo");
+var alert;
+var console;
+
+function myDate() {
+	var today = new Date().toLocaleDateString(undefined, {
+		day: '2-digit',
+		month: '2-digit',
+		year: 'numeric',
+		hour: '2-digit',
+		minute: '2-digit'
+	});
+	console.log(today);
+	alert(today);
+}
